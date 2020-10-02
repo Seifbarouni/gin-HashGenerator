@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Hash Generator</title>
+  </head>
+  <body>
+    <h1>Hash Generator</h1>
+    <form action="/hash/process" method="POST">
+      <input type="text" name="str" placeholder="String To Hash" />
+      <button type="submit">Hash</button>
+    </form>
+    {{if . }}
+    <h2>Hash : {{.}}</h2>
+    {{end}}
+  </body>
+</html>
